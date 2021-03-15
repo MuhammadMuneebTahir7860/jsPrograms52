@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body><br><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>Check whether a character is uppercase or lowercase alphabet</h3>
+            <p class="text-success font-weight-bold" id="textOutput"></p>
+            <input type="text" maxlength="1" class="form-control" id="textValue" placeholder="Enter any Charachter"><br>
+            <button class="btn btn-primary" onclick="checkUppercaseOrLowerCase()">Check</button>
+        </div>
+        <div class="col-lg-6">
+            <h3>Input Week number and print week day</h3><br>
+            <p class="text-success font-weight-bold" id="dayOutput"></p>
+            <input type="number" maxlength="1" class="form-control" id="weekNumberInput" placeholder="Enter Week Number"><br>
+            <button class="btn btn-primary" onclick="checkDay()">Check</button>
+
+        </div>
+    </div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Input month number and print number of days in that month</h3>
+        <p class="text-success font-weight-bold" id="monthDaysOutput"></p>
+        <input type="number" maxlength="2" class="form-control" id="monthInput" placeholder="Enter Month Number"><br>
+        <button class="btn btn-primary" onclick="printMonathDays()">Print</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Count total number of notes in given amount</h3><br>
+        <p class="text-success font-weight-bold" id="notesOutput"></p>
+        <input type="number" class="form-control" id="amountInput" placeholder="Enter Amount"><br>
+        <button class="btn btn-primary" onclick="calaculateNotes()">Count</button>
+    </div>
+</div><br>
+<div class="row">
+<div class="col-lg-6">
+    <h3>Input angles of a triangle and check whether triangle is valid or not</h3>
+    <p class="text-success font-weight-bold" id="triangleOutput"></p>
+    <input type="number" class="form-control" id="firstAngle" placeholder="Enter First Angle"><br>
+    <input type="number" class="form-control" id="secondAngle" placeholder="Enter Sceond Angle"><br>
+    <input type="number" class="form-control" id="thirdAngle" placeholder="Enter Third Angle"><br>
+    <button class="btn btn-primary" onclick="checkTriangleOrNot()">Check</button>
+</div>
+<div class="col-lg-6">
+    <h3>Input all sides of a triangle and check whether triangle is valid or not</h3>
+    <p class="text-success font-weight-bold" id="sidesTriangleOutput"></p>
+    <input type="number" class="form-control" id="sidesFirstAngle" placeholder="Enter First Side"><br>
+    <input type="number" class="form-control" id="sidesSecondAngle" placeholder="Enter Sceond Side"><br>
+    <input type="number" class="form-control" id="sidesThirdAngle" placeholder="Enter Third Side"><br>
+    <button class="btn btn-primary" onclick="checkTriangleOrNotBySides()">Check</button>
+</div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Check whether the triangle is equilateral, isosceles or scalene triangle</h3>
+        <p class="text-success font-weight-bold" id="equilateralOutput"></p>
+        <input type="number" class="form-control" id="firstSideInput" placeholder="Enter First Side"><br>
+        <input type="number" class="form-control" id="secondSideInput" placeholder="Enter Second Side"><br>
+        <input type="number" class="form-control" id="thirdSideInput" placeholder="Enter Third Side"><br>
+        <button class="btn btn-primary" onclick="checkEqualOrNot()">Check</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Find all roots of a quadratic equation</h3><br>
+        <p class="text-success font-weight-bold" id="rootsOutput"></p>
+        <input type="text" class="form-control" id="firstNumber" placeholder="Enter First Number"><br>
+        <input type="text" class="form-control" id="secondNumber" placeholder="Enter Second Number"><br>
+        <input type="text" class="form-control" id="thirdNumber" placeholder="Enter Third Number"><br>
+        <button class="btn btn-primary" onclick="findRoots()">Find</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Calculate profit or loss</h3><br>
+        <p class="text-success font-weight-bold" id="profitLossOutput"></p>
+        <input type="number" class="form-control" id="costPrice" placeholder="Enter Cost Price"><br>
+        <input type="number" class="form-control" id="sellPrice" placeholder="Enter Sell Price"><br>
+        <button class="btn btn-primary" onclick="findProfitLoss()">Calculate</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Search all occurrences of a character in given string</h3>
+        <p class="text-success font-weight-bold" id="searchOutput"></p>
+        <input type="text" class="form-control" id="stringInput" placeholder="Enter String"><br>
+        <input type="text" class="form-control" maxlength="1" id="searchChar" placeholder="Enter Character which you want to Search"><br>
+        <button class="btn btn-primary" onclick="searchChar()">Search</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Count occurrences of a character in given string</h3>
+        <p class="text-success font-weight-bold" id="countOutput"></p>
+        <input type="text" class="form-control" id="stringCountInput" placeholder="Enter String"><br>
+        <input type="text" class="form-control" maxlength="1" id="countSearchChar" placeholder="Enter Character which you want to Search"><br>
+        <button class="btn btn-primary" onclick="countChar()">Count</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Find highest frequency character in a string</h3>
+        <p class="text-success font-weight-bold" id="frequencyOutput"></p>
+        <input type="text" class="form-control" id="stringInputForFrequency" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="findHighFrequency()">Find</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Find lowest frequency character in a string</h3>
+        <p class="text-success font-weight-bold" id="lowFrequencyOutput"></p>
+        <input type="text" class="form-control" id="program13" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="findlowFrequency()">Find</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Count frequency of each character in a string</h3>
+        <p class="text-success font-weight-bold" id="allCharFrequencyOutput"></p>
+        <input type="text" class="form-control" id="program14" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="allCharFrequency()">Find</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Remove first occurrence of a character from string</h3>
+        <p class="text-success font-weight-bold" id="program15Output"></p>
+        <input type="text" class="form-control" id="program15InputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control" maxlength="1" id="program15InputChar" placeholder="Enter Charachter"><br>
+        <button class="btn btn-primary" onclick="removeFirstChar()">Remove</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Remove last occurrence of a character from string</h3>
+        <p class="text-success font-weight-bold" id="program16Output"></p>
+        <input type="text" class="form-control" id="program16InputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control" maxlength="1" id="program16InputChar" placeholder="Enter Charachter"><br>
+        <button class="btn btn-primary" onclick="removeLastChar()">Remove</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
