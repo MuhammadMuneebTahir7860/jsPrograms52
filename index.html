@@ -137,7 +137,299 @@
         <input type="text" class="form-control" maxlength="1" id="program16InputChar" placeholder="Enter Charachter"><br>
         <button class="btn btn-primary" onclick="removeLastChar()">Remove</button>
     </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Remove all occurrences of a character from string</h3>
+        <p class="text-success font-weight-bold" id="removeOutput"></p>
+        <input type="text" class="form-control" id="fullStringInput" placeholder="Enter String"><br>
+        <input type="text" class="form-control" maxlength="1" id="program17InputChar" placeholder="Enter Charachter"><br>
+        <button class="btn btn-primary" onclick="removeAllChar()">Remove</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Remove all repeated characters from a given string</h3>
+        <p class="text-success font-weight-bold" id="repeatedRemoveOutput"></p>
+        <input type="text" class="form-control" id="program18InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="removeAllRepeatedChar()">Remove</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>
+            Replace first occurrence of a character with another in a string
+        </h3>
+        <p class="text-success font-weight-bold" id="program19Output"></p>
+        <input type="text" class="form-control" id="program19IputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control" maxlength="1" id="program19InputChar" placeholder="Enter Charachter Which you want to remove"><br>
+        <input type="text" class="form-control" maxlength="1" id="program19InputReplaceChar" placeholder="Enter Charachter Which you want to Replace"><br>
+        <button class="btn btn-primary" onclick="replaceChar()">Replace</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Replace last occurrence of a character with another in a string</h3>
+        <p class="text-success font-weight-bold" id="program20Output"></p>
+        <input type="text" class="form-control" id="program20IputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control" maxlength="1" id="program20InputChar" placeholder="Enter Charachter Which you want to remove"><br>
+        <input type="text" class="form-control" maxlength="1" id="program20InputReplaceChar" placeholder="Enter Charachter Which you want to Replace"><br>
+        <button class="btn btn-primary" onclick="replaceLastChar()">Replace</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Replace all occurrences of a character with another in a string</h3>
+        <p class="text-success font-weight-bold" id="program21Output"></p>
+        <input type="text" class="form-control" id="program21IputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control" maxlength="1" id="program21InputChar" placeholder="Enter Charachter Which you want to remove"><br>
+        <input type="text" class="form-control" maxlength="1" id="program21InputReplaceChar" placeholder="Enter Charachter Which you want to Replace"><br>
+        <button class="btn btn-primary" onclick="replaceAllChar()">Replace</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Find first occurrence of a word in a given string</h3><br>
+        <p class="text-success font-weight-bold" id="program22Output"></p>
+        <input type="text" class="form-control" id="program22InputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control"  id="prograam22InputWord" placeholder="Enter Word"><br>
+        <button class="btn btn-primary" onclick="findWordOcrnce()">Find</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Find last occurrence of a word in a given string</h3>
+        <p class="text-success font-weight-bold" id="program23Output"></p>
+        <input type="text" class="form-control" id="program23InputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control"  id="prograam23InputWord" placeholder="Enter Word"><br>
+        <button class="btn btn-primary" onclick="findLastWordOcrnce()">Find</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Search all occurrences of a word in given string</h3>
+        <p class="text-success font-weight-bold" id="program24Output"></p>
+        <input type="text" class="form-control" id="program24InputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control"  id="prograam24InputWord" placeholder="Enter Word"><br>
+        <button class="btn btn-primary" onclick="findAllWordOcrnce()">Find</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Count occurrences of a word in a given string</h3>
+        <p class="text-success font-weight-bold" id="program25Output"></p>
+        <input type="text" class="form-control" id="program25InputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control"  id="prograam25InputWord" placeholder="Enter Word"><br>
+        <button class="btn btn-primary" onclick="countWordOcrnce()">Count</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Remove first occurrence of a word from string</h3>
+        <p class="text-success font-weight-bold" id="program26Output"></p>
+        <input type="text" class="form-control" id="program26InputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control"  id="prograam26InputWord" placeholder="Enter Word"><br>
+        <button class="btn btn-primary" onclick="removefirstoccnce()">Remove</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Remove last occurrence of a word in given string</h3>
+        <p class="text-success font-weight-bold" id="program27Output"></p>
+        <input type="text" class="form-control" id="program27InputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control"  id="prograam27InputWord" placeholder="Enter Word"><br>
+        <button class="btn btn-primary" onclick="removeLastoccnce()">Remove</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Remove all occurrence of a word in given string</h3>
+        <p class="text-success font-weight-bold" id="program28Output"></p>
+        <input type="text" class="form-control" id="program28InputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control"  id="prograam28InputWord" placeholder="Enter Word"><br>
+        <button class="btn btn-primary" onclick="removeAllCharccnce()">Remove</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Trim leading white space characters from given string</h3>
+        <p class="text-success font-weight-bold" id="program29Output"></p>
+        <input type="text" class="form-control" id="program29InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="removeSpaces()">Remove</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Trim trailing white space characters from given string</h3>
+        <p class="text-success font-weight-bold" id="program30Output"></p>
+        <input type="text" class="form-control" id="program30InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="removeTrailingSpaces()">Remove</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Trim both leading and trailing white space characters from given string</h3>
+        <p class="text-success font-weight-bold" id="program31Output"></p>
+        <input type="text" class="form-control" id="program31InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="removeAllSpaces()">Remove</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Remove all extra blank spaces from given string</h3><br>
+        <p class="text-success font-weight-bold" id="program32Output"></p>
+        <input type="text" class="form-control" id="program32InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="removeExtraSpaces()">Remove</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Count frequency of each element in an array</h3>
+        <p class="text-success font-weight-bold" id="program33Output"></p>
+        <input type="text" class="form-control" id="program33InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="countfrequency()">Count</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Print all unique elements in the array</h3>
+        <p class="text-success font-weight-bold" id="program34Output"></p>
+        <input type="text" class="form-control" id="program34InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="printUniqueEle()">Print</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Count total number of duplicate elements in an array</h3>
+        <p class="text-success font-weight-bold" id="program35Output"></p>
+        <input type="text" class="form-control" id="program35InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="countDuplicateEle()">Count</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Delete all duplicate elements from an array</h3>
+        <p class="text-success font-weight-bold" id="program36Output"></p>
+        <input type="text" class="form-control" id="program36InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="deleteDuplicateEle()">Delete</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Merge two array to third array</h3>
+        <p class="text-success font-weight-bold" id="program37Output"></p>
+        <input type="text" class="form-control" id="program37InputString1" placeholder="Enter String"><br>
+        <input type="text" class="form-control" id="program37InputString2" placeholder="Enter String"><br>
+        <input type="text" class="form-control" id="program37InputString3" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="mergeArray()">Merge</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Find reverse of an array</h3>
+        <p class="text-success font-weight-bold" id="program38Output"></p>
+        <input type="text" class="form-control" id="program38InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="reverseArray()">Find</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Put even and odd elements of array in two separate array</h3>
+        <p class="text-success font-weight-bold" id="program39Output"></p>
+        <input type="number" class="form-control" id="program39InputString" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="separateEvenOdd()">Separate</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Search an element in an array</h3>
+        <p class="text-success font-weight-bold" id="program40Output"></p>
+        <input type="text" class="form-control" id="program40InputString" placeholder="Enter String"><br>
+        <input type="text" class="form-control" id="program40InputElemnt" placeholder="Enter Element For Search"><br>
+        <button class="btn btn-primary" onclick="searchEle()">Search</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Sort array elements in ascending or descending order</h3>
+        <p class="text-success font-weight-bold" id="program41Output"></p>
+        <input type="text" class="form-control" id="program41InputElemnt" placeholder="Enter Array Elements"><br>
+        <button class="btn btn-primary" onclick="sortArray()">Sort</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Sort even and odd elements of array separately</h3>
+        <p class="text-success font-weight-bold" id="program42Output"></p>
+        <input type="text" class="form-control" id="program42InputElemnt" placeholder="Enter Elements Array"><br>
+        <button class="btn btn-primary" onclick="sortEvenOddArray()">Sort</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Left rotate an array</h3>
+        <p class="text-success font-weight-bold" id="program43Output"></p>
+        <input type="text" class="form-control" id="program43InputElemnt" placeholder="Enter Array Elements"><br>
+        <input type="number" class="form-control" id="program43InputNumber" placeholder="Enter Number For Rotation"><br>
+        <button class="btn btn-primary" onclick="leftRotateArray()">Left Rotate</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Right rotate an array</h3>
+        <p class="text-success font-weight-bold" id="program44Output"></p>
+        <input type="text" class="form-control" id="program44InputElemnt" placeholder="Enter Array Elements"><br>
+        <input type="number" class="form-control" id="program44InputNumber" placeholder="Enter Number For Rotation"><br>
+        <button class="btn btn-primary" onclick="rightRotateArray()">Right Rotate</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Find sum of all natural numbers between 1 to n</h3>
+        <p class="text-success font-weight-bold" id="program45Output"></p>
+        <input type="number" class="form-control" id="program45InputElemnt" placeholder="Enter Limit"><br>
+        <button class="btn btn-primary" onclick="findSum()">Find Sum</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Find sum of all even numbers between 1 to n</h3>
+        <p class="text-success font-weight-bold" id="program46Output"></p>
+        <input type="number" class="form-control" id="program46InputElemnt" placeholder="Enter Limit"><br>
+        <button class="btn btn-primary" onclick="findEvenSum()">Find Sum</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Find sum of all odd numbers between 1 to n</h3>
+        <p class="text-success font-weight-bold" id="program47Output"></p>
+        <input type="number" class="form-control" id="program47InputElemnt" placeholder="Enter Limit"><br>
+        <button class="btn btn-primary" onclick="findOddSum()">Find Sum</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Print multiplication table of any number</h3>
+        <p class="text-success font-weight-bold" id="program48Output"></p>
+        <input type="number" class="form-control" id="program48InputElemnt" placeholder="Enter Number"><br>
+        <button class="btn btn-primary" onclick="printTable()">Print</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Count number of digits in a number</h3>
+        <p class="text-success font-weight-bold" id="program49Output"></p>
+        <input type="number" class="form-control" id="program49InputElemnt" placeholder="Enter Number"><br>
+        <button class="btn btn-primary" onclick="countDigits()">Count</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Find first and last digit of a number</h3>
+        <p class="text-success font-weight-bold" id="program50Output"></p>
+        <input type="number" class="form-control" id="program50InputElemnt" placeholder="Enter Number"><br>
+        <button class="btn btn-primary" onclick="findFirstLast()">Find</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Find sum of first and last digit of a number</h3>
+        <p class="text-success font-weight-bold" id="program51Output"></p>
+        <input type="number" class="form-control" id="program51InputElemnt" placeholder="Enter Number"><br>
+        <button class="btn btn-primary" onclick="findFirstLastSum()">Find</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Swap first and last digits of a number</h3>
+        <p class="text-success font-weight-bold" id="program52Output"></p>
+        <input type="number" class="form-control" id="program52InputElemnt" placeholder="Enter Number"><br>
+        <button class="btn btn-primary" onclick="swapFirstLast()">Swap</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Calculate sum of digits of a number</h3>
+        <p class="text-success font-weight-bold" id="program53Output"></p>
+        <input type="number" class="form-control" id="program53InputElemnt" placeholder="Enter Number"><br>
+        <button class="btn btn-primary" onclick="sumOfAllDig()">Calculate</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Calculate product of digits of a number</h3>
+        <p class="text-success font-weight-bold" id="program54Output"></p>
+        <input type="number" class="form-control" id="program54InputElemnt" placeholder="Enter Number"><br>
+        <button class="btn btn-primary" onclick="productOfAllDig()">Calculate</button>
+    </div>
 </div>
+
 
 
 
